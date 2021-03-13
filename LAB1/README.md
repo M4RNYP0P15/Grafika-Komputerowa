@@ -2,6 +2,7 @@ NR.indeksu: 80249
 ![image](https://user-images.githubusercontent.com/38810840/111038765-f642d500-842a-11eb-844e-d0cbeb5aa14b.png)
 
 Stałe:
+
     private final int DELAY = 150; // opoznienie
     private final int INITIAL_DELAY = 200; // opoznienie
     private int x = 1; // zmienna przechowujaca wartosc odsuwania chmur
