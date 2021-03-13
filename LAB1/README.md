@@ -9,7 +9,8 @@ Stałe:
     private float alpha = 1; // zmienna przechowujaca wartosc kanalu alfa
 
 
-    private void doDrawing(Graphics g) {
+Funkcja doDrawing
+
         Graphics2D g2d = (Graphics2D) g.create();
 
         int w = getWidth(); //przypisanie szerokosci okna
