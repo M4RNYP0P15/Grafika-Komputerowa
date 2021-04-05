@@ -34,6 +34,6 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
     }
     
     
-    ![image](https://user-images.githubusercontent.com/38810840/113571521-d3b16f80-9616-11eb-9a22-30d63a808ce5.png)
+![image](https://user-images.githubusercontent.com/38810840/113571521-d3b16f80-9616-11eb-9a22-30d63a808ce5.png)
 
 
