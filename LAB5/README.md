@@ -15,7 +15,7 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
         return (int)Math.round(w);
     }
 
- 2. Liniowa:
+  2. Liniowa:
 
     public int f_linio(int b) // mozna bylo czesc rzeczy pominac
     {
