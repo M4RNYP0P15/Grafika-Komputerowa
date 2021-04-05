@@ -30,7 +30,6 @@ public class MieszanieObrazu extends JFrame implements ActionListener {
     JFileChooser opendialog = new JFileChooser();
     static BufferedImage orgimg;
     BufferedImage orgimg2;
-//    JTabbedPane tabs = new JTabbedPane();
     JPanel cont_opcje = new JPanel();
 
     JPanel cont_slider = new JPanel();
@@ -138,7 +137,7 @@ public class MieszanieObrazu extends JFrame implements ActionListener {
         this.repaint();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
-        this.setTitle("Przeksztalcenia obrazu");
+        this.setTitle("Mieszanie obrazu");
     }
 
     public void actionPerformed(ActionEvent e){
@@ -314,9 +313,6 @@ public class MieszanieObrazu extends JFrame implements ActionListener {
         int retval = opendialog.showSaveDialog(this);
         if (retval==JFileChooser.CANCEL_OPTION) return;
         try {
-// File f=opendialog.getSelectedFile();
-// if (f.exists()==false) f.createNewFile();
-// System.out.println("new file created");
             ImageIO.write((RenderedImage)(imagepanel.getImage()), "jpg", opendialog.getSelectedFile());
         } catch (IOException e) { System.err.println("Exception!!!");}
     }
