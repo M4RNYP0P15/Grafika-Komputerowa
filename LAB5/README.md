@@ -37,7 +37,7 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
 ## Mieszanie obrazu    
 ![image](https://user-images.githubusercontent.com/38810840/113571521-d3b16f80-9616-11eb-9a22-30d63a808ce5.png)
 
-
+#### Podobnie jak poprzednio, funkcja "bierze" 2 wartosci kolorów (z 1 obrazka np red i z 2) oraz wartosc o - opcja (0-sumowanie itd)
     public int f_0(int a, int b, int o){
         int x=a;
         int y=b;
