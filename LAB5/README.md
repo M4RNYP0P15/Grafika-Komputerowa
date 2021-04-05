@@ -1,8 +1,8 @@
 ![image](https://user-images.githubusercontent.com/38810840/113569573-08232c80-9613-11eb-886e-21cab6118e4c.png)
 
-Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależności od wyboru ((podajemy wartosc danego koloru)):
+Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależności od wyboru (liniowa/potegowa)podajemy wartosc danego koloru do funkcji:
 
-   Potegowa :
+  1. Potegowa :
 
     public int f_Potegowa(int b)
     {
@@ -15,7 +15,7 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
         return (int)Math.round(w);
     }
 
-  Liniowa:
+ 2. Liniowa:
 
     public int f_linio(int b) // mozna bylo czesc rzeczy pominac
     {
@@ -32,3 +32,8 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
             return 0;
         return (int)Math.round(w);
     }
+    
+    
+    ![image](https://user-images.githubusercontent.com/38810840/113571521-d3b16f80-9616-11eb-9a22-30d63a808ce5.png)
+
+
