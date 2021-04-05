@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/38810840/113569573-08232c80-9613-11eb-886e-21cab6118e4c.png)
 
 Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależności od wyboru ((podajemy wartosc danego koloru)):
-  Potegowa :
+    Potegowa :
 
     public int f_Potegowa(int b)
     {
