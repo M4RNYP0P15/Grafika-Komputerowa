@@ -48,7 +48,7 @@ public class PrzeksztalcanieObrazu extends JFrame implements ActionListener {
     JPanel con_slider_a = new JPanel();
     JLabel b_wspoll = new JLabel("b= 0");
     JSlider b_wspol = new JSlider(JSlider.HORIZONTAL,-255,255,0);
-    JLabel alfal=new JLabel("alfa= 1.00");
+    JLabel alfal=new JLabel("a= 1.00");
     JSlider alfa = new JSlider(JSlider.HORIZONTAL,-100,100,1);
 
     JPanel img = new JPanel();
@@ -64,7 +64,6 @@ public class PrzeksztalcanieObrazu extends JFrame implements ActionListener {
 
     public PrzeksztalcanieObrazu()
     {
-//        this.setSize(110,110);
         Container cont = new Container();//this.getContentPane();
         open.addActionListener(new ActionListener() {
             @Override
@@ -113,7 +112,7 @@ public class PrzeksztalcanieObrazu extends JFrame implements ActionListener {
             public void stateChanged(ChangeEvent e) {
                 alfav=alfa.getValue();
                 alfav/=100;
-                alfal.setText("Alfa= "+alfav);
+                alfal.setText("a= "+alfav);
             }
         });
 
@@ -294,42 +293,11 @@ public class PrzeksztalcanieObrazu extends JFrame implements ActionListener {
         img.repaint();
     }
 
-//    public static BufferedImage createInterleavedRGBImage(int imageWidth,int imageHeight,int imageDepth,
-//                                                          byte data[],boolean hasAlpha)
-//    {
-//        int pixel_byte,transparency;
-//        if(hasAlpha) {
-//            pixel_byte = 4; // 4*8 (A+ RGB)
-//            transparency = Transparency.BITMASK;
-//        }
-//        else {
-//            pixel_byte = 3;
-//            transparency = Transparency.OPAQUE;
-//        }
-//        int[] numBits = new int[pixel_byte];
-//        int[] bandoffsets = new int[pixel_byte];
-//        for(int i=0;i<pixel_byte;i++){
-//            numBits[i] = imageDepth;
-//            bandoffsets[i] =i;
-//        }
-//        ComponentColorModel ccm = new ComponentColorModel(ColorSpace.getInstance(ColorSpace.CS_sRGB),
-//                numBits, hasAlpha, false, transparency, DataBuffer.TYPE_BYTE);
-//        PixelInterleavedSampleModel csm = new PixelInterleavedSampleModel(
-//                DataBuffer.TYPE_BYTE,imageWidth, imageHeight,
-//                pixel_byte, imageWidth*pixel_byte, bandoffsets);
-//        DataBuffer dataBuf = new DataBufferByte(data, imageWidth*imageHeight*pixel_byte);
-//        WritableRaster wr = Raster.createWritableRaster(csm, dataBuf, new Point(0,0));
-//        return new BufferedImage(ccm, wr, false, null);
-//    }
-
     public void saveImage()
     {
         int retval = opendialog.showSaveDialog(this);
         if (retval==JFileChooser.CANCEL_OPTION) return;
         try {
-// File f=opendialog.getSelectedFile();
-// if (f.exists()==false) f.createNewFile();
-// System.out.println("new file created");
             ImageIO.write((RenderedImage)(imagepanel.getImage()), "jpg", opendialog.getSelectedFile());
         } catch (IOException e) { System.err.println("Exception!!!");}
     }
