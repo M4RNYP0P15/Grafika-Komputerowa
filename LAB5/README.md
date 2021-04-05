@@ -1,4 +1,4 @@
-## Przeksztalcanie obrazu (plik o takiej samej nazwie)
+# Przeksztalcanie obrazu (plik o takiej samej nazwie)
 ![image](https://user-images.githubusercontent.com/38810840/113569573-08232c80-9613-11eb-886e-21cab6118e4c.png)
 
 Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależności od wyboru (liniowa/potegowa)podajemy wartosc danego koloru do funkcji:
@@ -34,7 +34,7 @@ Klasycznie pętla po obrazie (pixelach) z podzialem na kolory(RGB) w zależnośc
         return (int)Math.round(w);
     }
     
-## Mieszanie obrazu    
+# Mieszanie obrazu    
 ![image](https://user-images.githubusercontent.com/38810840/113571521-d3b16f80-9616-11eb-9a22-30d63a808ce5.png)
 
 #### Podobnie jak poprzednio, funkcja "bierze" 2 wartosci kolorów (z 1 obrazka np red i z 2) oraz wartosc o - opcja (0-sumowanie itd)
