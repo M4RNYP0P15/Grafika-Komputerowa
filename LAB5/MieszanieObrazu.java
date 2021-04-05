@@ -42,7 +42,7 @@ public class MieszanieObrazu extends JFrame implements ActionListener {
     JButton save = new JButton("Zapisz");
 
     JPanel con_slider = new JPanel();
-    JLabel alphal=new JLabel("alpha= 1.00");
+    JLabel alphal=new JLabel("Alfa= 1.00");
     JSlider alpha = new JSlider(JSlider.HORIZONTAL,0,100,100);
 
     JPanel img = new JPanel();
