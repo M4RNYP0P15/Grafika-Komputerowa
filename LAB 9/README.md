@@ -1,4 +1,4 @@
-# Unity (pliki w tym folderze nie są kompletne) 
+# Unity (pliki w tym folderze nie są kompletne - github ma ograniczenie :( ) 
 ![image](https://user-images.githubusercontent.com/38810840/118548572-bfef4200-b75a-11eb-9770-a85c538e4546.png)
 
 ### Link do projektu: https://drive.google.com/file/d/198e5ADcMOZwFhZPs-AZvzgpigy1riRAw/view?usp=sharing
